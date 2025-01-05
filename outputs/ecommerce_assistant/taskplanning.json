@@ -1,0 +1,50 @@
+[
+    {
+        "task_name": "Answer product-related questions",
+        "steps": [
+            "Receive the user's product-related question and analyze the query to understand the specific information needed.",
+            "Utilize the RAGWorker to search the company's internal documentation for relevant answers to the user's query.",
+            "Compile the information found by the RAGWorker into a concise and user-friendly response.",
+            "Use the MessageWorker to deliver the response to the user, ensuring clarity and completeness of the information provided.",
+            "Ask the user if they need further clarification or have additional questions to ensure their query is fully addressed."
+        ]
+    },
+    {
+        "task_name": "Provide personalized product recommendations",
+        "steps": [
+            "Initiate interaction with the user to gather information about their preferences or requirements, such as desired product category, features, or price range.",
+            "Utilize RAGWorker to analyze the company's internal product information and generate a list of product recommendations based on user preferences.",
+            "Use MessageWorker to deliver the curated list of personalized product recommendations to the user.",
+            "Inquire if the user is interested in any of the recommended products or if they would like additional options or further assistance.",
+            "Provide further details about the selected products or offer additional recommendations if needed, ensuring user satisfaction with the options provided."
+        ]
+    },
+    {
+        "task_name": "Add item to the shopping cart",
+        "steps": [
+            "Add item to the shopping cart"
+        ]
+    },
+    {
+        "task_name": "Remove item from the shopping cart",
+        "steps": [
+            "Remove item from the shopping cart"
+        ]
+    },
+    {
+        "task_name": "Update item properties in the shopping cart",
+        "steps": [
+            "Update item properties in the shopping cart"
+        ]
+    },
+    {
+        "task_name": "Proceed to checkout and handle payment details",
+        "steps": [
+            "Confirm with the user if they are ready to proceed to checkout and if the items in the cart are correct.",
+            "Inquire if there are any questions or concerns regarding the checkout process that need to be addressed.",
+            "Request the user to provide payment details securely and assure them about the security of the transaction.",
+            "Process the payment using the provided details and confirm the transaction status to the user.",
+            "Provide a summary of the purchase and send a confirmation message or email with the transaction details."
+        ]
+    }
+]

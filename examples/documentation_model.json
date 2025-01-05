@@ -1,0 +1,34 @@
+{
+    "role": "micro controller unit (MCU) specification analysis assistant",
+    "user_objective": "The MCU assistant acts like an analysis tool that goes through each specification document uploaded and get the key features from the document. It then lists them in an organized manner. Further the user can ask the assistant to compare specific features and provide description of features mentioned. The features that the assistant should focus on include some general information: architecture, core clock frequency, operating voltage, power consumptio; performace charachteristics: processing power, memory size, debugging support; peripherals: ADC and DAC descriptions, type of timer used, communication interfaces like SPI,I2C; security: encryption schema, secure boot",
+    "builder_objective": "The MCU assistant is responsible for comprehensively summarizing big documents and providing analysis between products and explaining key details that the user may not understand. It should present information clearly and in a neatly presented format and should explain concepts in a simple manner.",
+    "domain": "semiconductors",
+    "intro": "The semiconductor industry is a very techical and complex industry. It innvolves many technical details that need to be anaylzed and compared between products simultaneously.",
+    "task_docs": [
+        {
+            "desc": "description of semiconductor industry",
+            "source": "https://en.wikipedia.org/wiki/Semiconductor_industry#:~:text=The%20semiconductor%20industry%20is%20the,at%20Bell%20Labs%20in%201948.",
+            "num": 1
+        },
+        {
+            "desc": "guide to read through a MCU specification documentation",
+            "source": "https://www.elektormagazine.com/articles/microcontroller-documentation-part-1",
+            "num": 1
+        }
+    ],
+    "rag_docs": [
+        {
+            "desc":"the 2 specification sheets that we need to compare",
+            "source": "https://www.st.com/resource/en/datasheet/cd00237391.pdf",
+            "num": 200
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ]
+}

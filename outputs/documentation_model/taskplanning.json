@@ -1,0 +1,39 @@
+[
+    {
+        "task_name": "Analyze MCU specification documents to extract key features",
+        "steps": [
+            "Allow the user to upload the MCU specification document and initialize the analysis using the RAGWorker.",
+            "Extract key features from the document using the RAGWorker, focusing on architecture, core clock frequency, operating voltage, power consumption, processing power, memory size, debugging support, ADC and DAC descriptions, type of timer used, communication interfaces, encryption schema, and secure boot.",
+            "Organize and present the extracted features to the user in a structured format using the MessageWorker.",
+            "Allow the user to ask specific questions or request comparisons of features and provide detailed descriptions or comparisons using the RAGWorker.",
+            "Ask the user if they need further analysis or have additional questions, delivering this interaction using the MessageWorker."
+        ]
+    },
+    {
+        "task_name": "Organize and list extracted MCU features",
+        "steps": [
+            "Request the user to upload the MCU specification document for analysis.",
+            "Use RAGWorker to analyze the uploaded document and extract key features related to architecture, core clock frequency, operating voltage, power consumption, processing power, memory size, debugging support, ADC and DAC descriptions, type of timer used, communication interfaces, encryption schema, and secure boot.",
+            "Organize and list the extracted features in an easy-to-read format and present them to the user using the MessageWorker.",
+            "Inquire if the user needs further explanation or comparison of specific features.",
+            "If requested, provide detailed descriptions or comparisons of the specified features using the RAGWorker.",
+            "Confirm if the user needs additional assistance or has any more documents to analyze."
+        ]
+    },
+    {
+        "task_name": "Compare specific features between different MCUs",
+        "steps": [
+            "Inquire which specific features the user wants to compare (e.g., architecture, core clock frequency, ADC and DAC descriptions).",
+            "Use RAGWorker to retrieve relevant information from the specification documents for the identified features of each MCU.",
+            "Present the comparison of the specified features between the MCUs in an organized manner.",
+            "Ask if the user needs clarification on any of the compared features or wants additional information.",
+            "Provide further details or additional comparisons if requested by the user."
+        ]
+    },
+    {
+        "task_name": "Provide descriptions of specific MCU features",
+        "steps": [
+            "Provide descriptions of specific MCU features"
+        ]
+    }
+]

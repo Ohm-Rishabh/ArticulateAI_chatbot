@@ -1,0 +1,48 @@
+[
+    {
+        "task_name": "Provide details on current and upcoming events",
+        "steps": [
+            "Inquire about the user's interests or preferences regarding the type of events they are interested in (e.g., music, theater, sports).",
+            "Use the DataBaseWorker to search for current and upcoming events that match the user's interests or preferences.",
+            "Present the user with a list of events that match their criteria using the MessageWorker.",
+            "Ask the user if they need more information about a specific event or have any other requests, such as booking tickets.",
+            "Provide the necessary information or proceed with assisting the user in booking tickets if requested."
+        ]
+    },
+    {
+        "task_name": "Check and provide information on ticket availability",
+        "steps": [
+            "Check and provide information on ticket availability"
+        ]
+    },
+    {
+        "task_name": "Assist with the ticket booking process",
+        "steps": [
+            "Ask the user for their preferences regarding the event, such as type of event, date, and location.",
+            "Use DataBaseWorker to search for events that match the user's criteria and provide the user with a list of available options.",
+            "Ask the user to select an event from the list of options provided.",
+            "Confirm the user's selection and proceed with the booking process using DataBaseWorker.",
+            "Provide the user with booking confirmation details and any additional information needed for attending the event."
+        ]
+    },
+    {
+        "task_name": "Offer personalized show recommendations",
+        "steps": [
+            "Inquire about the user's show preferences and gather any existing user data or history.",
+            "Use the DatabaseWorker to search for shows that match the user's preferences and provide a list of recommendations.",
+            "Ask the user if they would like to refine the recommendations or have any additional preferences.",
+            "Offer more refined recommendations based on user feedback and confirm the user's interest in any particular show.",
+            "Guide the user through the booking process or offer more information about the selected shows if needed."
+        ]
+    },
+    {
+        "task_name": "Provide information about the theatre venue and membership benefits",
+        "steps": [
+            "Ask the user if they have any specific questions or preferences regarding the theatre venue or membership benefits.",
+            "Provide detailed information about the theatre venue, including location, seating arrangements, amenities, and accessibility features.",
+            "Explain the membership benefits, including discounts, early access to tickets, exclusive events, and any other perks.",
+            "Ask the user if they have any further questions or need additional clarification on the information provided.",
+            "Offer to provide more details or connect the user with a human representative if the user requests further assistance."
+        ]
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "task_name": "Provide comprehensive information about Richtech Robotics' products, including specifications, features, and applications",
+        "steps": [
+            "Greet the user and ask how you can assist them with Richtech Robotics' products.",
+            "Use the RAGWorker to retrieve comprehensive information from internal documents about the specific product the user is interested in.",
+            "Provide detailed specifications, features, and applications of the product using the information retrieved.",
+            "Ask the user if they need further clarification or additional information on another product.",
+            "If the user requests more information, repeat the process using RAGWorker to gather and provide the requested details.",
+            "Conclude the interaction by thanking the user and offering further assistance if needed."
+        ]
+    },
+    {
+        "task_name": "Provide information on order status, expected delivery times, and shipping details for robots",
+        "steps": [
+            "Ask the user for specific information about their order, such as the order number or associated email address.",
+            "Use the RAGWorker to retrieve information on the order status, expected delivery times, and shipping details from internal documentation.",
+            "Deliver the retrieved information to the user, and ask if there is anything else they need help with regarding their order."
+        ]
+    },
+    {
+        "task_name": "Provide information on robot rental options, pricing, and availability for events",
+        "steps": [
+            "Use RAGWorker to gather detailed information about robot rental options, pricing, and availability for events from the company's internal documentation.",
+            "Deliver the gathered information to the user using MessageWorker and ask if they need more details or have specific questions.",
+            "If the user requires more information, refine the search using RAGWorker to provide additional details and answer specific queries.",
+            "Confirm if the user is interested in proceeding with a rental or needs further assistance.",
+            "Provide instructions or facilitate next steps for booking the rental if the user decides to proceed."
+        ]
+    },
+    {
+        "task_name": "Provide technical support and troubleshooting guidance for Richtech Robotics' products",
+        "steps": [
+            "Identify the specific technical issue or question the user is experiencing with Richtech Robotics' products.",
+            "Use the RAGWorker to retrieve relevant information and troubleshooting steps from the company's internal documentation.",
+            "Deliver the gathered information and guidance to the user using the MessageWorker.",
+            "Ask the user if the provided solution resolved their issue or if they require further assistance.",
+            "If the issue is not resolved, offer additional troubleshooting steps or provide options for escalation to a human support representative."
+        ]
+    },
+    {
+        "task_name": "Provide sales information, including pricing, purchasing options, and payment methods for robots",
+        "steps": [
+            "Initiate conversation with the user and inquire about the specific sales information they need regarding robots (e.g., pricing, purchasing options, payment methods).",
+            "Utilize the RAGWorker to retrieve relevant information from the company's internal documentation based on the user's inquiry.",
+            "Present the retrieved information to the user, ensuring clarity and completeness in addressing their query about robots.",
+            "Ask the user if they need any further clarification or additional information on the sales details provided.",
+            "If the user has more questions, continue to use the RAGWorker to pull additional information and provide further assistance. If not, conclude the conversation by offering to assist with any other queries they might have."
+        ]
+    },
+    {
+        "task_name": "Provide information on service and maintenance options, including scheduling and cost",
+        "steps": [
+            "Greet the user and ask them to specify their service or maintenance inquiry.",
+            "Use RAGWorker to retrieve relevant information from the company's internal documentation regarding service and maintenance options.",
+            "Present the retrieved information to the user, including available service and maintenance options.",
+            "Ask the user if they need specific details about scheduling or cost for any particular service option.",
+            "If the user requests specific details, use RAGWorker to provide detailed information on scheduling and cost for the requested service option.",
+            "Confirm if the user needs any further assistance or wants to proceed with scheduling a service.",
+            "Provide instructions on how to schedule the service if the user wants to proceed, or offer to connect them with a service representative for further assistance."
+        ]
+    },
+    {
+        "task_name": "Provide information on product compatibility, integration capabilities, and technical requirements",
+        "steps": [
+            "Provide information on product compatibility, integration capabilities, and technical requirements"
+        ]
+    },
+    {
+        "task_name": "Facilitate the process for providing feedback or lodging complaints and ensure proper follow-up",
+        "steps": [
+            "Inquire about the user's feedback or complaint details to gather specific information.",
+            "Confirm the details of the feedback or complaint with the user to ensure accuracy.",
+            "Provide information about the follow-up process based on company policies using RAGWorker.",
+            "Ask the user if they need additional assistance or wish to update their feedback.",
+            "Confirm the completion of the feedback or complaint process and thank the user for their input."
+        ]
+    },
+    {
+        "task_name": "Arrange and provide information for scheduling product demonstrations or trials",
+        "steps": [
+            "Inquire about the user's specific needs and preferences for the product demonstration or trial, such as preferred dates, times, and product features of interest.",
+            "Utilize the RAGWorker to search the company's internal documentation for available demonstration or trial options that match the user's preferences.",
+            "Present the user with available options for scheduling the demonstration or trial, including details like dates, times, and any special features or conditions.",
+            "Confirm the user's selection and finalize the booking for the demonstration or trial, providing any necessary follow-up information or instructions."
+        ]
+    },
+    {
+        "task_name": "Provide information and facilitate discussions regarding corporate partnerships and collaborations",
+        "steps": [
+            "Identify the user's specific inquiry or interest regarding corporate partnerships and collaborations.",
+            "Utilize the RAGWorker to search the company's internal documentation for information related to the user's inquiry.",
+            "Provide the user with detailed information and relevant documentation regarding corporate partnerships and collaborations.",
+            "Ask the user if they need further clarification or have additional questions about the partnerships and collaborations.",
+            "Facilitate a discussion or provide additional resources if the user requires further assistance or information."
+        ]
+    }
+]

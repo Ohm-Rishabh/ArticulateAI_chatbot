@@ -1,0 +1,478 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "name": "MessageWorker",
+                "attribute": {
+                    "value": "Hello! I'm your MCU Specification Analysis Assistant. Upload your MCU specification documents, and I'll help you extract and organize key features such as architecture, core clock frequency, power consumption, and more. Feel free to ask me to compare specific features or provide detailed descriptions. How can I assist you today?",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Please upload the MCU specification document to begin the analysis.",
+                    "task": "Allow the user to upload the MCU specification document and initialize the analysis using the RAGWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "2",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Extracting key features such as architecture, core clock frequency, and other specifications from the document.",
+                    "task": "Extract key features from the document using the RAGWorker, focusing on architecture, core clock frequency, operating voltage, power consumption, processing power, memory size, debugging support, ADC and DAC descriptions, type of timer used, communication interfaces, encryption schema, and secure boot.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "3",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the extracted features from your document: [List of features].",
+                    "task": "Organize and present the extracted features to the user in a structured format using the MessageWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "4",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "You can ask specific questions or request comparisons of the features. How can I assist you further?",
+                    "task": "Allow the user to ask specific questions or request comparisons of features and provide detailed descriptions or comparisons using the RAGWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "5",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need further analysis or have any additional questions about the MCU specifications?",
+                    "task": "Ask the user if they need further analysis or have additional questions, delivering this interaction using the MessageWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "6",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Please upload the MCU specification document for analysis.",
+                    "task": "Request the user to upload the MCU specification document for analysis.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "7",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Use RAGWorker to analyze the uploaded document and extract key features related to architecture, core clock frequency, operating voltage, power consumption, processing power, memory size, debugging support, ADC and DAC descriptions, type of timer used, communication interfaces, encryption schema, and secure boot.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "8",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here is a summary of the key features from the MCU specification document: [list of features].",
+                    "task": "Organize and list the extracted features in an easy-to-read format and present them to the user using the MessageWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "9",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need further explanation or comparison of any specific features?",
+                    "task": "Inquire if the user needs further explanation or comparison of specific features.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "10",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "If requested, provide detailed descriptions or comparisons of the specified features using the RAGWorker.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "11",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need any additional assistance or have more documents to analyze?",
+                    "task": "Confirm if the user needs additional assistance or has any more documents to analyze.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "12",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Which specific features would you like to compare for the MCUs? For example, architecture, core clock frequency, ADC and DAC descriptions.",
+                    "task": "Inquire which specific features the user wants to compare (e.g., architecture, core clock frequency, ADC and DAC descriptions).",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "13",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Use RAGWorker to retrieve relevant information from the specification documents for the identified features of each MCU.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "14",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here is the comparison of the specified features between the MCUs you selected.",
+                    "task": "Present the comparison of the specified features between the MCUs in an organized manner.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "15",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need clarification on any of the compared features, or would you like additional information?",
+                    "task": "Ask if the user needs clarification on any of the compared features or wants additional information.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "16",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Provide further details or additional comparisons if requested by the user.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "17",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "The MCU feature includes advanced processing capabilities, energy efficiency, and enhanced connectivity options designed to optimize performance in various applications.",
+                    "task": "Provide descriptions of specific MCU features",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants to extract key features from MCU specification documents",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "User wants to list extracted MCU features in an organized manner",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "10",
+            "11",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "12",
+            {
+                "intent": "User wants to compare specific features between different MCUs",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "12",
+            "13",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "15",
+            "16",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "17",
+            {
+                "intent": "User wants a description of specific MCU features",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "micro controller unit (MCU) specification analysis assistant",
+    "user_objective": "The MCU assistant acts like an analysis tool that goes through each specification document uploaded and get the key features from the document. It then lists them in an organized manner. Further the user can ask the assistant to compare specific features and provide description of features mentioned. The features that the assistant should focus on include some general information: architecture, core clock frequency, operating voltage, power consumptio; performace charachteristics: processing power, memory size, debugging support; peripherals: ADC and DAC descriptions, type of timer used, communication interfaces like SPI,I2C; security: encryption schema, secure boot",
+    "builder_objective": "The MCU assistant is responsible for comprehensively summarizing big documents and providing analysis between products and explaining key details that the user may not understand. It should present information clearly and in a neatly presented format and should explain concepts in a simple manner.",
+    "domain": "semiconductors",
+    "intro": "The semiconductor industry is a very techical and complex industry. It innvolves many technical details that need to be anaylzed and compared between products simultaneously.",
+    "task_docs": [
+        {
+            "desc": "description of semiconductor industry",
+            "source": "https://en.wikipedia.org/wiki/Semiconductor_industry#:~:text=The%20semiconductor%20industry%20is%20the,at%20Bell%20Labs%20in%201948.",
+            "num": 1
+        },
+        {
+            "desc": "guide to read through a MCU specification documentation",
+            "source": "https://www.elektormagazine.com/articles/microcontroller-documentation-part-1",
+            "num": 1
+        }
+    ],
+    "rag_docs": [
+        {
+            "desc": "the 2 specification sheets that we need to compare",
+            "source": "https://www.st.com/resource/en/datasheet/cd00237391.pdf",
+            "num": 200
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWorker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ],
+    "nluapi": "http://localhost:55135/nlu/predict",
+    "slotfillapi": "http://localhost:55135/slotfill/predict"
+}

@@ -1,0 +1,499 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "name": "MessageWorker",
+                "attribute": {
+                    "value": "Hello! I'm your E-commerce Shopping Cart Assistant. I'm here to help you with product recommendations, answer any questions you have, and assist you with managing your shopping cart. Let me know how I can make your shopping experience smoother today!",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Thank you for your question. Let me understand your request to provide the best information possible.",
+                    "task": "Receive the user's product-related question and analyze the query to understand the specific information needed.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "2",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Utilize the RAGWorker to search the company's internal documentation for relevant answers to the user's query.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "3",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Compile the information found by the RAGWorker into a concise and user-friendly response.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "4",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on your query, here is the information you requested: [insert concise response].",
+                    "task": "Use the MessageWorker to deliver the response to the user, ensuring clarity and completeness of the information provided.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "5",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you need any further clarification or have additional questions?",
+                    "task": "Ask the user if they need further clarification or have additional questions to ensure their query is fully addressed.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "6",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Hello! Can you let me know what product category you're interested in and any specific features or price range you're looking for?",
+                    "task": "Initiate interaction with the user to gather information about their preferences or requirements, such as desired product category, features, or price range.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "7",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Utilize RAGWorker to analyze the company's internal product information and generate a list of product recommendations based on user preferences.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "8",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on your preferences, here are some product recommendations that might interest you.",
+                    "task": "Use MessageWorker to deliver the curated list of personalized product recommendations to the user.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "9",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you interested in any of these products, or would you like to see more options?",
+                    "task": "Inquire if the user is interested in any of the recommended products or if they would like additional options or further assistance.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "10",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like more details on any of these products, or do you need more recommendations?",
+                    "task": "Provide further details about the selected products or offer additional recommendations if needed, ensuring user satisfaction with the options provided.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "11",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "The item has been successfully added to your shopping cart.",
+                    "task": "Add item to the shopping cart",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "12",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "The item has been successfully removed from your shopping cart.",
+                    "task": "Remove item from the shopping cart",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "13",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "I have updated the properties of the item in your shopping cart. Is there anything else you would like to modify?",
+                    "task": "Update item properties in the shopping cart",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "14",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you ready to proceed to checkout and are all the items in your cart correct?",
+                    "task": "Confirm with the user if they are ready to proceed to checkout and if the items in the cart are correct.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "15",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you have any questions or concerns about the checkout process that I can help with?",
+                    "task": "Inquire if there are any questions or concerns regarding the checkout process that need to be addressed.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "16",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Please provide your payment details securely. Rest assured, your transaction is safe and encrypted.",
+                    "task": "Request the user to provide payment details securely and assure them about the security of the transaction.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "17",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Your payment is being processed. I will confirm the transaction status shortly.",
+                    "task": "Process the payment using the provided details and confirm the transaction status to the user.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "18",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here is a summary of your purchase. A confirmation message with the transaction details has been sent to your email.",
+                    "task": "Provide a summary of the purchase and send a confirmation message or email with the transaction details.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User has questions about a product",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "User is looking for product recommendations",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "11",
+            {
+                "intent": "User wants to add an item to the shopping cart",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "12",
+            {
+                "intent": "User wants to remove an item from the shopping cart",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "13",
+            {
+                "intent": "User wants to update item properties in the shopping cart",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "14",
+            {
+                "intent": "User is ready to checkout",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "15",
+            "16",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "16",
+            "17",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "17",
+            "18",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "e-commerce shopping cart assistant",
+    "user_objective": "The e-commerce assistant acts like a shopping attendant and assists customers through the purchasing process through answering any questions about the product, providing recommendation based on the customer's preferences, and interacting with the shopping cart adding items, removing items, and updating the properties of each item in the cart. When the customer is ready and satisfied, the shopping assistant can also proceed to checkout taking in the user's payment details to bill it.",
+    "builder_objective": "The e-commerce assistant smoothens the user experience and supports the users in its purchasing habits. It recommends products and encourages the user towards product that the user would have a greater inclination to buy. It should be un-intrusive, helpful, and convincing while not being too pushy. The assistant should try to understand the user and their preferances to match them with items they would prefer.",
+    "domain": "ecommerce",
+    "intro": "Amazon.com is an e-commerce platform that sells many product lines, including media (books, movies, music, and software), apparel, baby products, consumer electronics, beauty products, gourmet food, groceries, health and personal care products, industrial & scientific supplies, kitchen items, jewelry, watches, lawn and garden items, musical instruments, sporting goods, tools, automotive items, toys and games, and farm supplies and consulting services. Amazon websites are country-specific (for example, amazon.com for the U.S. and amazon.co.uk for UK) though some offer international shipping.",
+    "docs": [
+        {
+            "desc": "description of ecommerce",
+            "source": "https://en.wikipedia.org/wiki/E-commerce",
+            "num": 1
+        },
+        {
+            "desc": "sample of amazon storefront",
+            "source": "https://www.amazon.com/",
+            "num": 10
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "RagMsgWoker",
+        "MessageWorker",
+        "SearchWorker",
+        "DefaultWorker"
+    ],
+    "rag_docs": [
+        "path/to/your/docs"
+    ],
+    "nluapi": "http://localhost:55135/nlu/predict",
+    "slotfillapi": "http://localhost:55135/slotfill/predict"
+}
