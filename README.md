@@ -1,3 +1,12 @@
+#CHANGES
+This repo has been copied from https://github.com/ArticulateAI/Agent-First-Organization/tree/v0.0.1?tab=readme-ov-file.
+Have added another example JSON file for analysing MCU spec sheets.
+
+Some Observations:
+The RAG size is limited to 20 pages per input url.
+It needs a web url, need to have features to upload pdfs locally.
+
+
 # Agent First Organization
 :pencil2: <a href="https://articulateai.github.io/Agent-First-Organization/">Documentations</a>
 
