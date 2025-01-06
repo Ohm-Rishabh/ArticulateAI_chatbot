@@ -1,4 +1,4 @@
-# CHANGES
+# CHANGES by Ohm Rishabh
 This repo has been copied from https://github.com/ArticulateAI/Agent-First-Organization/tree/v0.0.1?tab=readme-ov-file.
 
 Have added another example JSON file for analysing MCU spec sheets.
