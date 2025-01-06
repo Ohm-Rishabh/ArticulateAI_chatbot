@@ -1,11 +1,16 @@
 # CHANGES
 This repo has been copied from https://github.com/ArticulateAI/Agent-First-Organization/tree/v0.0.1?tab=readme-ov-file.
+
 Have added another example JSON file for analysing MCU spec sheets.
+
 Have added some test cases to test the boundary of the models including data extraction from tables. TODO: Find a proper benchmark to test this.
+
 Have added more API support appart from OpenAI. Currently supports Groq, Cerebras. TODO: Need to find a way to make the chatbot use models that are stored locally.
 
 Some Observations:
+
 The RAG size is limited to 20 pages per input url.
+
 It needs a web url, need to have features to upload pdfs locally.
 
 
