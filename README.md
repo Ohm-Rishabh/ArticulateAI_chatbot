@@ -5,13 +5,13 @@ Have added another example JSON file for analysing MCU spec sheets.
 
 Have added some test cases to test the boundary of the models including data extraction from tables. TODO: Find a proper benchmark to test this.
 
-Have added more API support appart from OpenAI. Currently supports Groq, Cerebras. TODO: Need to find a way to make the chatbot use models that are stored locally.
+Have added more API support appart from OpenAI. Currently supports Groq, Cerebras.
 
-Some Observations:
-
-The RAG size is limited to 20 pages per input url.
+The RAG size is limited to 20 pages per input url irrespective of model.
 
 It needs a web url, need to have features to upload pdfs locally.
+
+Implemented feature to use locally hosted models (not supported previously)
 
 
 # Agent First Organization
