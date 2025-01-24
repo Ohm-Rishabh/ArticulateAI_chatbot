@@ -11,7 +11,7 @@ The RAG size is limited to 20 pages per input url irrespective of model.
 
 It needs a web url, need to have features to upload pdfs locally.
 
-Implemented feature to use locally hosted models (not supported previously). Done by creating a containor for the local model and passing it as an API key to the framework.
+Implemented feature to use locally hosted models (not supported previously). Done by passing http://localhost:11434/api -> ollama api key to the chatbot and setting it up.
 
 
 # Agent First Organization
